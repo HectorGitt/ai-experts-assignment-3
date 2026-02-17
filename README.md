@@ -44,6 +44,22 @@ Your tasks:
 - Apply the smallest possible fix to make the tests pass.
 - Keep the change minimal and reviewable (no refactors).
 
+## How to Run Tests
+
+### Locally
+
+```bash
+pip install -r requirements.txt
+python -m pytest -v
+```
+
+### With Docker
+
+```bash
+docker build -t ai-experts-assignment .
+docker run ai-experts-assignment
+```
+
 ## Constraints
 
 - Keep changes minimal and reviewable.
