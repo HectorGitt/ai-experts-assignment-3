@@ -25,7 +25,3 @@ This guarantees that the checks for `.expired` and `.as_header()` calls are done
 ## One realistic case / edge case your tests still don’t cover
 
 The current tests don't cover the case where the `dict` token is missing required keys (e.g., `access_token` or `expires_at`). `OAuth2Token(**self.oauth2_token)` would raise a `TypeError` in that scenario. A robust production fix might validate the dictionary keys before conversion or handle the exception.
-
-## One realistic case / edge case your tests still don’t cover
-
-The tests do not cover the case where the `dict` token is missing required keys (e.g., `access_token` or `expires_at`).  `OAuth2Token(**self.oauth2_token)` would raise a `TypeError` in this case. A proper production solution could check the keys of the dictionary before conversion or catch the exception.
